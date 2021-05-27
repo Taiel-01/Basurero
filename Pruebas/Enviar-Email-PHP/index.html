@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mail PHP</title>
+</head>
+<body>
+    <form action="enviar.php" method="post" class="formulario conteiner">
+        <fieldset>
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            </div>
+            <div>
+                <label for="correo">Correo: </label>
+                <input type="email" name="correo" id="correo" placeholder="mail@mail.com" required>
+            </div>
+            <div>
+                <label for="mensaje">Mensaje: </label>
+                <textarea id="mensaje" placeholder="mensaje..." required></textarea>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
