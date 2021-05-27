@@ -11,21 +11,24 @@
     <form action="enviar.php" method="post" class="formulario conteiner">
         <fieldset>
             <div>
-                <label for="nombre">Nombre: </label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <input type="text" placeholder="name" name="name">
             </div>
             <div>
-                <label for="correo">Correo: </label>
-                <input type="email" name="correo" id="correo" placeholder="mail@mail.com" required>
+                <input type="email" placeholder="email" name="email">
             </div>
             <div>
-                <label for="mensaje">Mensaje: </label>
-                <textarea id="mensaje" placeholder="mensaje..." required></textarea>
+                <input type="text" placeholder="asunto" name="asunto">
+            </div>
+            <div>
+                <textarea placeholder="mensaje" name="msg"></textarea>
             </div>
             <div>
                 <input type="submit">
             </div>
         </fieldset>
     </form>
+<?php
+include("correo.php")
+?>
 </body>
 </html>
